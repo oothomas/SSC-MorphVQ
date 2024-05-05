@@ -2,7 +2,7 @@
 # Spatially and Spectrally Consistent MorphVQ
 
 This repository contains the implementation of the Spatially and Spectrally Consistent MorphVQ model, designed for biological shape matching and automatic landmark aquisition.
-This model leverages unique techniques to maintain consistency in spatial and spectral domains, enhancing the quality and reliability of the shape correspondences produces.
+This model leverages unique techniques to maintain consistency in spatial and spectral domains, enhancing the quality and reliability of the shape correspondences produced.
 
 ## Prerequisites
 
