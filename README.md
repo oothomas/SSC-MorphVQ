@@ -20,8 +20,8 @@ Follow these steps to get the environment set up:
 First, clone the repository to your local machine using git:
 
 ```bash
-git clone https://github.com/oothomas/Spacially_and_Spectrally_Consistent_MorphVQ.git
-cd Spacially_and_Spectrally_Consistent_MorphVQ
+git clone https://github.com/oothomas/Spatially_and_Spectrally_Consistent_MorphVQ.git
+cd Spatially_and_Spectrally_Consistent_MorphVQ
 ```
 
 ### Install required packages
