@@ -45,7 +45,17 @@ To train the model with the default parameters specified in the configuration fi
 python train_dqfmnet.py --config config.yaml
 ```
 
-You can edit the `config.yaml` file to adjust training parameters such as batch size, learning rate, or the number of epochs.
+When run for the first time, train_dqfmnet.py with precompute all required quantities need for training. 
+This might take some time and progress will be reported on the console.
+First, the model will train on the 30A dataset found in the data directory. This model runs for 30 epochs, and the best model weights as saved along the way in the runs folder.
+Training can be monitored via tensorboard by initiating it from the command line:
+
+```bash
+python tensorboard --logdir=runs
+```
+
+Once training is complete inference on the 103 specimen validation dataset will begin,
+which will then be followed by an exporting of the MorphVQ landmarks estimated by the inference procedure.
 
 ## Configuration
 
@@ -55,6 +65,8 @@ The `config.yaml` file contains all model configurations. Here's a brief overvie
 - `validation_dataset_path`: Path to the validation dataset.
 - `total_epochs`: Total number of training epochs.
 - `learning_rate`: Starting learning rate for the training.
+
+You can edit the `config.yaml` file to adjust training parameters such as batch size, learning rate, or the number of epochs.
 
 ## Contributing
 
