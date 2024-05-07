@@ -77,4 +77,12 @@ Contributions to this project are welcome! To contribute, please fork the reposi
 This project is licensed under the MIT License
 
 ## Acknowledgments
-[]
+
+This work has been inspired and influenced by several pioneering research contributions in the field of shape analysis and machine learning on 3D surfaces. We acknowledge and appreciate the foundational works provided by:
+
+- Nicholas Sharp, Souhaib Attaiki, Keenan Crane, and Maks Ovsjanikov (2020) for their insights into learning on 3D surfaces as described in their paper "DiffusionNet: Discretization Agnostic Learning on Surfaces." *arXiv preprint arXiv:2012.00888*. [DOI: 10.48550/arxiv.2012.00888](https://doi.org/10.48550/arxiv.2012.00888).
+
+- Mingze Sun, Shiwei Mao, Puhua Jiang, Maks Ovsjanikov, and Ruqi Huang (2023) for their significant contributions to deep functional maps in "Spatially and Spectrally Consistent Deep Functional Maps." *arXiv preprint arXiv:2308.08871*. [DOI: 10.48550/arxiv.2308.08871](https://doi.org/10.48550/arxiv.2308.08871).
+
+- Nicolas Donati, Etienne Corman, and Maks Ovsjanikov (2022) for their development of orientation-aware functional maps as detailed in "Deep Orientation-Aware Functional Maps: Tackling Symmetry Issues in Shape Matching." *arXiv preprint arXiv:2204.13453*. [DOI: 10.48550/arxiv.2204.13453](https://doi.org/10.48550/arxiv.2204.13453).
+
