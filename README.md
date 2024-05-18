@@ -36,16 +36,29 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 # Install requirements
 pip install -r requirements.txt
 ```
+## Folder Descriptions
+
+### data
+This folder contains raw and preprocessed data necessary for training and evaluation. It includes the 30A dataset for training the model 103 specimen evaluation dataset, and raw data for example preprocessing.
+
+### datasets
+This folder contains pytorch dataset objects for creating datasets and data loaders for training and evaluation.
+
+### diffusion_net
+This folder contains implementation details or utilities related to DiffusionNet.
+
+### Tools
+This folder contains scripts and utilities that assist in various tasks such as data preprocessing and visualization.
 
 ## Usage
 
 To train the model with the default parameters specified in the configuration files, run the training script from the command line:
 
 ```bash
-python train_dqfmnet.py --config config.yaml
+python train.py --config config.yaml
 ```
 
-When run for the first time, train_dqfmnet.py with precompute all required quantities need for training. 
+When run for the first time, train.py with precompute all required quantities need for training. 
 This might take some time and progress will be reported on the console.
 First, the model will train on the 30A dataset found in the data directory. This model runs for 30 epochs, and the best model weights as saved along the way in the runs folder.
 Training can be monitored via tensorboard by initiating it from the command line:
