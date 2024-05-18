@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ### data
 This folder contains raw and preprocessed data necessary for training and evaluation.
-It includes the 30A dataset for training the model, a 103 specimen evaluation dataset, and a raw data for example preprocessing.
+It includes the 30A dataset for training the model, a 103 specimen evaluation dataset, and some raw data for example preprocessing.
 
 ### datasets
 This folder contains pytorch dataset objects for creating datasets and data loaders for training and evaluation.
