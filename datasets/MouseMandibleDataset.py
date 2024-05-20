@@ -3,7 +3,7 @@ from os import listdir as osls
 from os.path import isfile, join
 from itertools import permutations
 from random import shuffle
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 
 import numpy as np
 
@@ -56,7 +56,7 @@ class MouseMandibleDataset(Dataset):
 
         locations = {f[:-4]: join(ply_path, f) for f in osls(ply_path) if isfile(join(ply_path, f))}
         flawed_files = []
-        for key, value in tqdm(locations.items()):
+        for key, value in tqdm(locations.items(), ascii=True):
             print(key)
             shape = {}
             # verts, faces = read_off(value)
