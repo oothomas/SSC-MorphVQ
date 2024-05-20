@@ -189,7 +189,7 @@ def train_model(config):
         alpha_i = alpha_list[min(epoch, len(alpha_list) - 1)]
 
         epoch_loss = 0.0
-        for i, data in enumerate(train_dl):
+        for i, data in tqdm(enumerate(train_dl), total=len(train_dl), desc="Processing batches"):
             start_time = time.time()  # Start timing the batch processing
 
             # Preprocess and augment data
@@ -226,6 +226,10 @@ def train_model(config):
 
             # Log batch statistics to TensorBoard
             writer.add_scalar('Batch/Loss/total_loss', loss.item(), epoch * total_batches + i)
+            writer.add_scalar('Batch/Loss/ortho_loss', loss_ortho.item(), epoch * total_batches + i)
+            writer.add_scalar('Batch/Loss/bij_loss', loss_bij.item(), epoch * total_batches + i)
+            writer.add_scalar('Batch/Loss/res_loss', loss_res.item(), epoch * total_batches + i)
+            writer.add_scalar('Batch/Loss/rank_loss', loss_rank.item(), epoch * total_batches + i)
             writer.add_scalar('Batch/Time', elapsed_time, epoch * total_batches + i)
 
             if i % save_interval == 0:
