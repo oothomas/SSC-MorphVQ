@@ -26,7 +26,7 @@ cd Spatially_and_Spectrally_Consistent_MorphVQ
 
 ### Install required packages
 
-Install the necessary Python packages using `pip`. It's recommended to create a virtual environment before installation to avoid conflicts with existing packages.
+Install the necessary Python packages using `pip`. It's recommended to create a virtual environment before installation to avoid conflicts with existing packages. Note that in some platforms you may have to replace `python` with `python3`, or set an alias.
 
 ```bash
 # Optional: Create a virtual environment
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ### data
 This folder contains raw and preprocessed data necessary for training and evaluation.
-It includes the 30A dataset for training the model, a 103 specimen evaluation dataset, and some raw data for example preprocessing.
+It includes the 30A dataset for training the model, an evaluation dataset with 103 specimens, and some raw data for example preprocessing that is required to obtain manifold models.
 
 ### datasets
 This folder contains pytorch dataset objects for creating datasets and data loaders for training and evaluation.
@@ -80,7 +80,7 @@ The `config.yaml` file contains all model configurations. Here's a brief overvie
 - `total_epochs`: Total number of training epochs.
 - `learning_rate`: Starting learning rate for the training.
 
-You can edit the `config.yaml` file to adjust training parameters such as batch size, learning rate, or the number of epochs.
+You can edit the `config.yaml` file to adjust training parameters such as batch size, learning rate, or the number of epochs depending on the GPU available to you.
 
 ## Contributing
 
