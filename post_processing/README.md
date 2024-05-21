@@ -13,7 +13,7 @@ Ensure you have the following Python package installed:
 You can install the `tqdm` package using pip:
 
 ```sh
-pip install tqdm
+pip install tqdm 
 ```
 
 ## Usage
